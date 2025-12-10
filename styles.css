@@ -25,6 +25,10 @@ body {
   font-family: Roboto, sans-serif; 
   font-size: 14px;
   letter-spacing: 0.03em;
+  display: flex;           /* додаємо */
+  flex-direction: column;  /* вертикальне розташування */
+  min-height: 100vh;       /* щоб body займав всю висоту вікна */
+  margin: 0;      
 }
 
 /* Контейнер */
