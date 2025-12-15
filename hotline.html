@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ukr">
 
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="">
-    <title>Знижки</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-     <link rel="icon" type="image/svg+xml" href="tropical-drink.svg" />
-     <link rel="icon" href="tropical-drink.png" type="image/png">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Підключення шрифтів Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Стилі сайту -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Підключення іконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Фавікон сайту -->
+    <link rel="icon" type="image/svg+xml" href="tropical-drink.svg" />
+
+    <!-- Назва сторінки -->
+    <title>Знижки</title>
 </head>
 
 <body>
+    <!-- ================= HEADER ================= -->
     <header>
         <div class="head-container">
+            <!-- Логотип -->
             <div class="logo_drink">
-                <img src="thumbnail.png">
+                <img src="https://cdn-icons-png.flaticon.com/512/5295/5295896.png" alt="Logo">
             </div>
+
+            <!-- Навігаційне меню -->
             <nav>
                 <div class="nav-item"><a href="author.html">Про автора</a></div>
                 <div class="nav-item"><a href="location.html">Адреса</a></div>
@@ -28,37 +40,37 @@
             </nav>
         </div>
     </header>
+
+    <!-- ================= ГОЛОВНИЙ БЛОК ================= -->
     <div class="main">
         <h1 class="hero-title title">Знижки</h1>
     </div>
 
+    <!-- ================= СПИСОК НАПОЇВ ================= -->
     <div class="drink">
-       <div class="drink-list">
+        <div class="drink-list">
+            <!-- ======== Перший напій ======== -->
             <div class="drink-item">
                 <div class="drink-img">
-                    <img class="drink-foto"
-                        src="https://www.mirlandraskitchen.com/wp-content/uploads/2017/04/Brazilian-Lemonade-600x900.jpg">
+                    <img class="drink-foto" src="https://www.mirlandraskitchen.com/wp-content/uploads/2017/04/Brazilian-Lemonade-600x900.jpg" alt="Бразильський лимонад">
                 </div>
                 <div class="drink-name">
                     <span>Бразильський лимонад</span>
                 </div>
                 <div class="drink-ingridients">
-                    <p>Лайм, згущене молоко, вода, лід та цукор </p>
+                    <p>Лайм, згущене молоко, вода, лід та цукор</p>
                 </div>
                 <div class="drink-action">
                     <div class="price">65 грн</div>
-                    <!-- <a href="#" class="drink-btn">Buy</a> -->
-                    <button type="button" class="button drink-btn" data-modal-open>
-                        Купити
-                    </button>
-                    
+                    <!-- Кнопка покупки -->
+                    <button type="button" class="button drink-btn" data-modal-open>Купити</button>
                 </div>
             </div>
 
+            <!-- ======== Другий напій ======== -->
             <div class="drink-item">
                 <div class="drink-img">
-                    <img class="drink-foto"
-                        src="https://ilona-product.com/assets/ckeditor/kcfinder/upload/images/%D0%AF%D0%BA%20%D0%BF%D1%80%D0%B8%D0%B3%D0%BE%D1%82%D1%83%D0%B2%D0%B0%D1%82%D0%B8%20%D1%81%D0%BC%D0%B0%D1%87%D0%BD%D0%B8%D0%B9%20%D0%B3%D0%BB%D1%96%D0%BD%D1%82%D0%B2%D0%B5%D0%B9%D0%BD%20%D0%B2%D0%B4%D0%BE%D0%BC%D0%B0%20%D0%9F%D0%BE%D1%80%D0%B0%D0%B4%D0%B8%20%D0%B2%D1%96%D0%B4%20ILONA.jpg">
+                    <img class="drink-foto" src="https://ilona-product.com/assets/ckeditor/kcfinder/upload/images/%D0%AF%D0%BA%20%D0%BF%D1%80%D0%B8%D0%B3%D0%BE%D1%82%D1%83%D0%B2%D0%B0%D1%82%D0%B8%20%D1%81%D0%BC%D0%B0%D1%87%D0%BD%D0%B8%D0%B9%20%D0%B3%D0%BB%D1%96%D0%BD%D1%82%D0%B2%D0%B5%D0%B9%D0%BD%20%D0%B2%D0%B4%D0%BE%D0%BC%D0%B0%20%D0%9F%D0%BE%D1%80%D0%B0%D0%B4%D0%B8%20%D0%B2%D1%96%D0%B4%20ILONA.jpg" alt="Глінтвейн">
                 </div>
                 <div class="drink-name">
                     <span>Глінтвейн</span>
@@ -68,16 +80,14 @@
                 </div>
                 <div class="drink-action">
                     <div class="price">70 грн</div>
-                    <button type="button" class="button drink-btn" data-modal-open>
-                        Купити
-                    </button>
+                    <button type="button" class="button drink-btn" data-modal-open>Купити</button>
                 </div>
             </div>
 
-         <div class="drink-item">
+            <!-- ======== Третій напій ======== -->
+            <div class="drink-item">
                 <div class="drink-img">
-                    <img class="drink-foto"
-                        src="https://valentinawine.com/wp-content/uploads/2022/08/white_sangria_fahrwasser.jpeg">
+                    <img class="drink-foto" src="https://valentinawine.com/wp-content/uploads/2022/08/white_sangria_fahrwasser.jpeg" alt="Тропічта сангрія">
                 </div>
                 <div class="drink-name">
                     <span>Тропічта сангрія</span>
@@ -87,118 +97,106 @@
                 </div>
                 <div class="drink-action">
                     <div class="price">200 грн</div>
-                    <button type="button" class="button drink-btn" data-modal-open>
-                        Купити
-                    </button>
+                    <button type="button" class="button drink-btn" data-modal-open>Купити</button>
                 </div>
             </div>
-</div>
+        </div>
+    </div>
 
-        
-    </div>   
- <div data-modal class="backdrop is-hidden">
+    <!-- ================= МОДАЛЬНЕ ВІКНО ================= -->
+    <div data-modal class="backdrop is-hidden">
         <div class="modal">
-                <button data-modal-close class="close-btn">
+            <!-- Кнопка закриття -->
+            <button data-modal-close class="close-btn">
                 <svg class="modal-close icon">
-                    <use class="icon-network" href="./img/icons.svg#icon-close-black">
-                
-                    </use>
+                    <use class="icon-network" href="./img/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
+
             <div class="content-card__modal">
+                <!-- Зображення напою -->
                 <div class="content-card__img">
-                    <img src="./img/Drinks_Tropical_cocktails.jpg" width='240' height='357'
-                  alt="Drink" class='content-card__drink'>
-                  <form class="form">
-                   
-                    <label class="form-label">Назва 
-                        <input type="text" class="form-input" name="name" placeholder="Коктейль" required />
-                        
-                    </label>
-                    <label for="quantity" class="form-label">Кількість
-                        <input type="number" class="form-input" name="quantity" min="1" max="30" placeholder=" max= 30 " required />
-                    </label>
-                    <label class="form-label area">
-                        Коментар
-                        <textarea class="form-feedback" name="feedback" rows="5" placeholder="Ваші уподобання"></textarea>              
-                </form>
+                    <img src="./img/Drinks_Tropical_cocktails.jpg" width="240" height="357" alt="Drink" class='content-card__drink'>
+
+                    <!-- Форма вибору кількості та коментар -->
+                    <form class="form">
+                        <label class="form-label">Назва 
+                            <input type="text" class="form-input" name="name" placeholder="Коктейль" required />
+                        </label>
+                        <label for="quantity" class="form-label">Кількість
+                            <input type="number" class="form-input" name="quantity" min="1" max="30" placeholder=" max= 30 " required />
+                        </label>
+                        <label class="form-label area">Коментар
+                            <textarea class="form-feedback" name="feedback" rows="5" placeholder="Ваші уподобання"></textarea>
+                        </label>              
+                    </form>
                 </div>
+
+                <!-- Форма оформлення замовлення -->
                 <form class="form">
                     <h2 class="form-title">ФОРМА ЗАМОВЛЕННЯ</h2>
+
+                    <!-- Поле Ім'я -->
                     <label class="form-label">Ім'я
                         <input type="text" class="form-input" name="name" placeholder="Тарас Шевченко" required />
                         <span class="form-icon">
                             <svg class="form-person icon">
-                                <use href="./img/icons.svg#icon-person-black-18dp-1">
-                                </use>
+                                <use href="./img/icons.svg#icon-person-black-18dp-1"></use>
                             </svg>
                         </span>
                     </label>
+
+                    <!-- Поле Телефон -->
                     <label class="form-label">Телефон
                         <input type="tel" class="form-input" name="phone-number" placeholder="+38 066 1234567" required />
                         <span class="form-icon">
                             <svg class="form-person icon">
-                                <use href="./img/icons.svg#icon-phone-black-18dp-1">
-                    
-                                </use>
+                                <use href="./img/icons.svg#icon-phone-black-18dp-1"></use>
                             </svg>
                         </span>
                     </label>
+
+                    <!-- Поле Адреса доставки -->
                     <label class="form-label">Адреса доставки
                         <input type="email" class="form-input" name="email" placeholder="вул. Гоголя, 78а, Кропивницький" required/>
                         <span class="form-icon">
                             <svg class="form-person icon">
-                                <use href="./img/icons.svg#icon-email-black-18dp-1">
-                    
-                                </use>
+                                <use href="./img/icons.svg#icon-email-black-18dp-1"></use>
                             </svg>
                         </span>
                     </label>
-                    <!-- <label class="form-label area">
-                        Коментар
-                        <textarea class="form-feedback" name="feedback" rows="5" placeholder="Ваші уподобання"></textarea>
-                    </label>   -->
+
+                    <!-- Чекбокс для згоди на обробку даних -->
                     <label class="checkbox-field">
                         <input type="checkbox" class="checkbox-consent" name="consent" /> 
                         <svg class="checkbox-icon icon">
-                            <use href="./img/icons.svg#icon-icon-check">
-                            </use>
+                            <use href="./img/icons.svg#icon-icon-check"></use>
                         </svg>
                         <span class="checkbox-label">
                             Погоджуюсь на обробку інформації
                             <a class="checkbox-link" href="">Умови конфіденційності</a>
                         </span>
-                        
                     </label>
+
+                    <!-- Кнопка підтвердження замовлення -->
                     <button type="submit" class="button submit">Замовити</button>
                 </form>
             </div>
-            
         </div>
-        
     </div>  
-    
-       <script src="modal.js"></script>   
-<footer class="footer">
-    <div class="footer-info">
-        <p>© 2025 Знайдений рай. Усі права захищені.</p>
 
-        <p>
-            <i class="fa-solid fa-phone"></i>
-            +38 066 123 45 67
-        </p>
+    <!-- Підключення JS для модальних вікон -->
+    <script src="modal.js"></script>   
 
-        <p>
-            <i class="fa-solid fa-location-dot"></i>
-            м. Кропивницький
-        </p>
-
-        <p>
-            <i class="fa-brands fa-instagram"></i>
-            @drink_paradise
-        </p>
-    </div>
-</footer>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-info">
+            <p>© 2025 Знайдений рай. Усі права захищені.</p>
+            <p><i class="fa-solid fa-phone"></i> +38 066 123 45 67</p>
+            <p><i class="fa-solid fa-location-dot"></i> м. Кропивницький</p>
+            <p><i class="fa-brands fa-instagram"></i> @drink_paradise</p>
+        </div>
+    </footer>
 </body>
 
 </html>
