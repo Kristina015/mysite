@@ -1,54 +1,55 @@
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Встановлення глобальної моделі box-sizing */
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: inherit; /* Успадкування box-sizing для всіх елементів */
 }
 :root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --color-accent: #2196f3;
-  --color-fon: #2f303a;
-  --white-color: #ffffff;
-  --secondary-bg-color: #f5f4fa;
-  --button-primary-focus: #188ce8;
-  --color-icon-fill: #afb1b8;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --primary-text-color: #757575; /* Основний колір тексту (сірий) */
+  --title-text-color: #212121; /* Колір заголовків (майже чорний) */
+  --color-accent: #2196f3; /* Акцентний колір (блакитний) */
+  --color-fon: #2f303a; /* Колір фону (темно-сірий/чорний) */
+  --white-color: #ffffff; /* Білий колір */
+  --secondary-bg-color: #f5f4fa; /* Додатковий колір фону (світло-сірий) */
+  --button-primary-focus: #188ce8; /* Колір кнопки при фокусі/наведенні (темно-блакитний) */
+  --color-icon-fill: #afb1b8; /* Колір заповнення іконок (світло-сірий) */
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Функція часу для анімацій */
 }
 
 body {
-  background-color: #99FFFF;
+  background-color: #99FFFF; /* Колір фону сторінки (світло-блакитний) */
   /* color: var(--primary-text-color); */
-  font-family: Roboto, sans-serif; 
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  display: flex;           /* додаємо */
-  flex-direction: column;  /* вертикальне розташування */
-  min-height: 100vh;       /* щоб body займав всю висоту вікна */
-  margin: 0;      
+  font-family: Roboto, sans-serif; /* Основний шрифт */
+  font-size: 14px; /* Базовий розмір шрифту */
+  letter-spacing: 0.03em; /* Міжсимвольний інтервал */
+  display: flex; /* Увімкнення Flexbox */
+  flex-direction: column; /* Вертикальне розташування елементів */
+  min-height: 100vh; /* Висота body мінімум на всю висоту вікна */
+  margin: 0; /* Прибираємо зовнішні відступи */
+  padding-top: 115px; /* Відступ зверху для фіксованого хедера */
 }
 
-/* Контейнер */
+/* Контейнер для обмеження ширини контенту */
 .head-container {
-  max-width: 1200px;
+  max-width: 1200px; /* Максимальна ширина */
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px; /* Внутрішні відступи по боках */
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; /* Вирівнювання по центру */
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+  list-style: none; /* Прибираємо маркери списку */
+  padding-left: 0; /* Прибираємо внутрішній відступ списку */
+  margin: 0; /* Прибираємо зовнішні відступи списку */
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; /* Прибираємо підкреслення посилань */
+  color: inherit; /* Успадкування кольору тексту */
 }
 
 h1,
@@ -58,39 +59,38 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin: 0; /* Прибираємо зовнішні відступи заголовків і параграфів */
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  display: block; /* Робимо зображення блоковими */
+  max-width: 100%; /* Максимальна ширина 100% від контейнера */
+  height: auto; /* Автоматична висота */
 }
 
 .our-location {
-  display: flex;
+  display: flex; /* Розміщення елементів поруч */
 }
 
 .nav-item {
   display: flex;
-
-  align-items: center;
+  align-items: center; /* Вирівнювання по центру вертикально */
 }
 
 .nav-link:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 50px; /* Відступ між елементами навігації */
 }
 
 
-/* button */
+/* Стилі для кнопок */
 .button {
-  color: var(--white-color);
-  background-color: var(--color-accent);
-  font-family: inherit;
+  color: var(--white-color); /* Колір тексту кнопки */
+  background-color: var(--color-accent); /* Колір фону кнопки */
+  font-family: inherit; /* Успадкування шрифту */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
-  cursor: pointer;
+  cursor: pointer; /* Зміна курсора */
 }
 
 .button.primary {
@@ -104,29 +104,27 @@ img {
   cursor: pointer;
   border: none;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  transition: color 250ms var(--timing-function);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* Тінь */
+  transition: color 250ms var(--timing-function); /* Анімація кольору */
 }
 .button.primary:hover,
 .button.primary:focus {
-  color: var(--button-primary-focus);
+  color: var(--button-primary-focus); /* Зміна кольору тексту при наведенні/фокусі */
 }
 
-/* button portfolio */
+/* Кнопки для Портфоліо (вторинні) */
 .button.secondary {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   cursor: pointer;
   text-decoration: none;
-
   display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;
   text-align: center;
   border: 1px solid transparent;
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
-    box-shadow 250ms var(--timing-function);
+    box-shadow 250ms var(--timing-function); /* Анімації */
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -138,9 +136,10 @@ img {
 
 .button.secondary.active {
   background-color: var(--color-accent);
-  color: var(--white-color);
+  color: var(--white-color); /* Активна кнопка */
 }
 
+/* Схований елемент (для доступності) */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -148,14 +147,13 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-/* link */
+/* Стилі для посилань навігації */
 .link {
   display: inline-block;
   color: var(--title-text-color);
@@ -164,19 +162,18 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
 .link:hover,
 .link:focus {
-  color: var(--color-accent);
+  color: var(--color-accent); /* Зміна кольору при наведенні/фокусі */
 }
 
 .site-nav .link.current {
   position: relative;
-  color: var(--color-accent);
+  color: var(--color-accent); /* Активний пункт навігації */
 }
 
 .link.current::after {
@@ -187,13 +184,12 @@ img {
   background: var(--color-accent);
   border-radius: 2px;
   bottom: 0;
-  left: 0;
+  left: 0; /* Підкреслення для активного пункту */
 }
 
-/* icon */
-
+/* Стилі для іконок */
 .icon {
-  fill: currentColor;
+  fill: currentColor; /* Заповнення кольором тексту батьківського елемента */
 }
 
 .icon-inner {
@@ -224,7 +220,7 @@ img {
 }
 
 .card-client:last-child {
-  margin-right: 0px;
+  margin-right: 0px; /* Прибираємо відступ в останнього елемента */
 }
 
 .client-link {
@@ -235,18 +231,17 @@ img {
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-
   transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
 .client-link:hover,
 .client-link:focus {
-  border: 1px solid var(--color-accent);
+  border: 1px solid var(--color-accent); /* Зміна рамки при наведенні/фокусі */
 }
 
 .client-link:hover .icon-client,
 .client-link:focus .icon-client {
-  fill: var(--color-accent);
+  fill: var(--color-accent); /* Зміна кольору іконки при наведенні/фокусі */
 }
 
 .icon-client {
@@ -256,15 +251,15 @@ img {
   transition: fill 250ms var(--timing-function);
 }
 
-/* Модальное окно */
+/* Модальне вікно */
 
 .backdrop {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2); /* Напівпрозорий чорний фон */
   left: 0px;
   top: 0px;
-  position: fixed;
+  position: fixed; /* Фіксоване позиціонування (на весь екран) */
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
@@ -272,44 +267,38 @@ img {
   width: 528px;
   height: 581px;
   padding: 40px;
-
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Центрування */
   transition: transform 250ms var(--timing-function);
 }
 
 .close-btn {
   position: absolute;
-
   width: 30px;
   height: 30px;
   top: 8px;
   right: 8px;
-
   background: var(--white-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-
   transition: fill 250ms var(--timing-function);
 }
 
 .close-btn:hover .modal-close,
 .close-btn:focus .modal-close {
-  fill: var(--color-accent);
+  fill: var(--color-accent); /* Зміна кольору іконки закриття */
 }
 
 .modal-close {
   position: absolute;
   width: 14px;
   height: 14px;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -320,7 +309,7 @@ img {
 .is-hidden {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: none; /* Прихований стан модального вікна */
 }
 
 .content-card__modal {
@@ -335,12 +324,11 @@ img {
 }
 
 
-/* Форма */
+/* Форма в модальному вікні */
 .form {
   padding: 10px;
 }
 .form-title {
-  
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -352,7 +340,6 @@ img {
 .form-label {
   display: block;
   position: relative;
-  
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.16;
@@ -367,17 +354,16 @@ img {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 15px;
-  padding-left: 42px;
+  padding-left: 42px; /* Відступ для іконки */
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   margin-top: 4px;
   outline: none;
   transition: border 250ms var(--timing-function);
 }
 
 .form-input:focus {
-  border: 1px solid var(--color-accent);
+  border: 1px solid var(--color-accent); /* Зміна рамки при фокусі */
 }
 
 .form-icon {
@@ -386,8 +372,7 @@ img {
   height: 18px;
   left: 12px;
   top: 65%;
-  
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* Центрування іконки */
 }
 
 .form-person.icon {
@@ -398,7 +383,7 @@ img {
 }
 
 .form-label:focus-within .form-person.icon {
-  fill: var(--color-accent);
+  fill: var(--color-accent); /* Зміна кольору іконки при фокусі на полі */
 }
 
 .form-label.area {
@@ -412,8 +397,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
-
-  resize: none;
+  resize: none; /* Заборона зміни розміру текстового поля */
   transition: border 250ms var(--timing-function);
 }
 
@@ -427,7 +411,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -435,32 +418,26 @@ img {
 }
 
 .checkbox-consent {
- 
+  /* Візуально приховуємо стандартний чекбокс */
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
-  
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .checkbox-label {
- 
   left: 24px;
 }
 
 .checkbox-icon {
   display: inline-block;
-  
   width: 16px;
   height: 15px;
   border-radius: 2px;
- 
   margin-right: 7px;
- 
-  
-  fill: var(--white-color);
+  fill: var(--white-color); /* Колір "галочки" */
   border: 2px solid var(--title-text-color);
   transition: transform 250ms var(--timing-function), fill 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
@@ -471,7 +448,7 @@ img {
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
-  fill: var(--color-accent);
+  fill: var(--color-accent); /* Стилі для відміченого чекбокса */
 }
 
 .checkbox-link {
@@ -488,7 +465,7 @@ img {
   width: 200px;
   height: 50px;
   padding: 10px 55px;
-  margin: 50px auto 0 auto;
+  margin: 50px auto 0 auto; /* Центрування кнопки */
   border: none;
   background-color:rgba(0, 191, 255, 0.6) ;
   transition: color 250ms var(--timing-function);
@@ -499,7 +476,7 @@ img {
   color: var(--button-primary-focus);
 }
 
-/* kristina */
+/* Стилі для header */
 header {
   width: 100%;
   display: flex;
@@ -526,21 +503,17 @@ nav .nav-item a {
   margin-left: 10px;
   font-size: 20px;
   font-weight: bold;
-
   display: block;
   padding: 32px 0;
-  
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-  
-
   transition: color 250ms var(--timing-function)
 }
 
 nav .nav-item a:hover,
 nav .nav-item a:focus {
-  color: #2177d5;
+  color: #2177d5; /* Колір посилання при наведенні */
   /* text-decoration: underline; */
 }
 
@@ -553,7 +526,7 @@ nav .nav-item a:focus {
 }
 
 .hero-title:hover {
-  transform: scale(1.2);
+  transform: scale(1.2); /* Ефект збільшення при наведенні */
 }
 
 .drink-title__seconder {
@@ -568,18 +541,18 @@ nav .nav-item a:focus {
 
 .drink {
   width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto; /* Центрування секції з напоями */
 }
 
 .drink .drink-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; /* Розподіл елементів по ширині */
 }
 
 .drink-item {
-  width: 30%;
+  width: 30%; /* Ширина картки (приблизно 3 в ряд) */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -611,7 +584,7 @@ nav .nav-item a:focus {
 
 .drink-action {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Розміщення ціни та кнопки */
 }
 
 .drink-btn:hover {
@@ -620,7 +593,6 @@ nav .nav-item a:focus {
 
 .drink-name {
   letter-spacing: 0.04em;
-  /* margin-top: 90px; */
   font-size: 16px;
   line-height: 1.76;
   font-weight: 900;
@@ -650,11 +622,10 @@ nav .nav-item a:focus {
 
 .location__thumb {
   flex-grow: 0;
-  max-width: 1000px;  
-  height: 300px; 
+  max-width: 1000px;
+  height: 300px;
   border-radius: 15px;
-  overflow: hidden;
-
+  overflow: hidden; /* Обрізаємо вміст за рамки */
   border: 3px solid #00bfff;
 }
 
@@ -664,72 +635,71 @@ nav .nav-item a:focus {
 }
 
 .photo {
-  width: 500px;         /* ширина фото */
-  height: 600px;        /* висота фото */
-  object-fit: cover;    /* обрізає фото красиво */
+  width: 500px; /* Ширина фото */
+  height: 600px; /* Висота фото */
+  object-fit: cover; /* Обрізає фото красиво */
   border-radius: 4px 4px 4px 4px;
-  box-shadow: 
+  box-shadow:
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   display: block;
 }
 .logo_drink {
-  width: 100px;         /* ширина фото */
+  width: 100px; /* Ширина логотипу */
   height: 100px;
   object-fit: cover;
 }
 
 .footer {
-    background-color: rgba(0, 191, 255, 0.6); 
-    padding: 20px 0;
-    margin-top: 40px;
+  background-color: rgba(0, 191, 255, 0.6); /* Напівпрозорий блакитний фон футера */
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
 .footer-info {
-    text-align: center;
-    
-    font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-info p {
-    margin: 5px 0;
-    font-size: 16px;
+  margin: 5px 0;
+  font-size: 16px;
 }
 
 .footer-info i {
-    margin-right: 8px;
-    color: #fff; /* можна змінити */
-    font-size: 18px;
+  margin-right: 8px;
+  color: #fff; /* Колір іконок у футері */
+  font-size: 18px;
 }
 
 .author-container {
-    display: flex;
-    align-items: flex-start; /* вирівнювання по верхньому краю фото */
-    gap: 30px; /* відстань між фото і текстом */
-    margin-bottom: 50px; /* відступ знизу */
+  display: flex;
+  align-items: flex-start; /* Вирівнювання по верхньому краю фото */
+  gap: 30px; /* Відстань між фото і текстом */
+  margin-bottom: 50px; /* Відступ знизу */
 }
 
 .about-text {
-    max-width: 500px; /* обмеження ширини тексту */
-    font-size: 16px;
-    line-height: 1.6;
-    color: #212121; /* можна змінити на інший колір */
+  max-width: 500px; /* Обмеження ширини тексту */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #212121;
 }
 
 /* Контейнер слайдера */
 .slider {
-  max-width: 600px;   /* ширина слайдера */
-  height: 350px;      /* висота слайдера */
+  max-width: 600px; /* Ширина слайдера */
+  height: 350px; /* Висота слайдера */
   margin: 0 auto;
-  overflow: hidden;   /* щоб не вилазили елементи */
-  border-radius: 20px; /* якщо треба округлення */
+  overflow: hidden; /* Обрізаємо вміст, що виходить за межі */
+  border-radius: 20px;
 }
 
 /* Кожен слайд */
 .slider .swiper-slide {
   width: 100%;
-  height: 100%;       /* важливо! щоб фото розтягувались */
+  height: 100%; /* Щоб фото займало всю висоту слайда */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -739,6 +709,246 @@ nav .nav-item a:focus {
 .slider .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* робить фото красивими без спотворення */
+  object-fit: cover; /* Робить фото красивими без спотворення */
 }
 
+/* Кнопка чату */
+.chat-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #00bfff;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.chat-button:hover {
+  transform: scale(1.1);
+  background: #0095d9;
+}
+
+/* Вікно чату */
+.chat-window {
+  position: fixed;
+  bottom: 95px;
+  right: 25px;
+  width: 320px;
+  height: 420px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+  display: none; /* За замовчуванням приховано */
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.chat-window.open {
+  display: flex; /* Відображаємо, коли додано клас open */
+  animation: fade 0.3s ease;
+}
+
+@keyframes fade {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.chat-header {
+  background: #00bfff;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-close {
+  cursor: pointer;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto; /* Прокрутка повідомлень */
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.msg {
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 80%;
+  line-height: 1.3;
+}
+
+.msg.bot {
+  background: #e3f5ff;
+  align-self: flex-start; /* Повідомлення бота ліворуч */
+}
+
+.msg.user {
+  background: #00bfff;
+  color: white;
+  align-self: flex-end; /* Повідомлення користувача праворуч */
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0 0 0 12px;
+}
+
+.chat-input button {
+  width: 80px;
+  background: #00bfff;
+  color: white;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 0 0 12px 0;
+}
+
+/* Анімація появи карток напоїв */
+.drink-item {
+  opacity: 0;
+  transform: rotateY(15deg) translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.drink-item.visible {
+  opacity: 1;
+  transform: rotateY(0deg) translateY(0); /* Стан після появи */
+}
+
+/* Sticky header */
+header {
+  position: fixed; /* Фіксований хедер */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #99FFFF;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  padding: 10px 0;
+}
+
+header.scrolled {
+  padding: 5px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Тінь при прокручуванні */
+}
+
+/* Swiper кастомні стилі */
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2196f3; /* Колір кнопок навігації слайдера */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2196f3; /* Колір активної точки пагінації */
+}
+.slider-small {
+  width: 600px; /* Ширина нового слайдера */
+  height: 350px; /* Висота нового слайдера */
+  margin: 20px auto;
+}
+
+.slider-small .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Секція відгуків */
+.reviews {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.reviews h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #2196f3;
+}
+
+.review-item {
+  display: flex;
+  gap: 20px;
+  background-color: #f7f9fc;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.review-item:hover {
+  transform: translateY(-5px); /* Ефект підняття при наведенні */
+}
+
+.review-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Круглий аватар */
+  object-fit: cover;
+}
+
+.review-content {
+  flex: 1;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.review-rating {
+  color: #ffb400; /* Колір зірочок рейтингу */
+  font-size: 16px;
+}
+
+.review-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+} 
