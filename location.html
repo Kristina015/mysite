@@ -1,118 +1,139 @@
 <!DOCTYPE html>
-<html>
-<title>Адреса</title>
-<link rel="stylesheet" href="styles.css">
-<head>
-    <meta keywords="">
-    <title>Напої</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" type="image/svg+xml" href="tropical-drink.svg" />
-    <link rel="icon" href="tropical-drink.png" type="image/png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ukr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Підключення шрифтів Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Назва сторінки -->
+    <title>Напої</title>
+
+    <!-- Основні стилі сайту -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Стилі для Swiper-слайдера -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Фавікон сайту -->
+    <link rel="icon" type="image/svg+xml" href="tropical-drink.svg" />
 </head>
 
 <body>
+    <!-- ================= HEADER ================= -->
     <header>
         <div class="head-container">
+            <!-- Логотип -->
             <div class="logo_drink">
-                <img src="thumbnail.png">
+                <img src="https://cdn-icons-png.flaticon.com/512/5295/5295896.png" alt="Logo">
             </div>
+            <!-- Навігаційне меню -->
             <nav>
-                <div class="nav-item"><a href="author.html">Про автора</a></div>
-                <div class="nav-item"><a href="location.html">Адреса</a></div>
-                <div class="nav-item"><a href="hotline.html">Знижки</a></div>
-                <div class="nav-item"><a href="index.html">Напої</a></div>
+                <div class="nav-item"><a href="./author.html">Про автора</a></div>
+                <div class="nav-item"><a href="./location.html">Адреса</a></div>
+                <div class="nav-item"><a href="./hotline.html">Знижки</a></div>
+                <div class="nav-item"><a href="./index.html">Напої</a></div>
             </nav>
         </div>
     </header>
+
+    <!-- ================= ГОЛОВНИЙ БЛОК ================= -->
     <div class="main">
         <h1 class="hero-title title">Знайдений рай</h1>
     </div>
+
+    <!-- ================= ЛОКАЦІЯ ================= -->
     <div class="drink">
-        <h2 class="location__title"> Наша локація </h2>
+        <!-- Заголовок секції -->
+        <h2 class="location__title">Наша локація</h2>
+
+        <!-- Google Maps для відображення розташування -->
         <div class="location__thumb">
-        <iframe class="location__content" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.403093983429!2d32.257627876387275!3d48.50633697128657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d043d262eba733%3A0xb62989e0a024912e!2sPanorama%20ZVD!5e0!3m2!1sru!2sua!4v1684696990893!5m2!1sru!2sua" 
-            width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+            <iframe class="location__content" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.403093983429!2d32.257627876387275!3d48.50633697128657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d043d262eba733%3A0xb62989e0a024912e!2sPanorama%20ZVD!5e0!3m2!1sru!2sua!4v1684696990893!5m2!1sru!2sua" 
+                width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div> 
-       
 
-<h2 class="location__title"> Наш заклад </h2>
+        <!-- ================= ФОТО ЗАКЛАДУ ================= -->
+        <h2 class="location__title">Наш заклад</h2>
 
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="https://bdc2020.o0bc.com/wp-content/uploads/2022/07/ARAM7592-62e01970cbf3f-scaled.jpg"></div>
-          <div class="swiper-slide"><img src="https://gopark.today/upload/resize_cache/iblock/8c1/nonfm1tlhmbn1yus4ala4e5vw8fjrx6d/2100_6000_1/NZ_33.jpg"></div>
-          <div class="swiper-slide"><img src="https://storage.googleapis.com/aba2025_bucket/wp-content/uploads/189bf463-abachicago_interior_jeffmarini_2025-hero.jpg"></div>
-         
-        </div>    
-<div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="modal.js"></script>
-    <script type="text/javascript">
-        const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+        <!-- Swiper-слайдер для зображень закладу -->
+        <div class="swiper location-swiper">
+            <div class="swiper-wrapper">
+                <!-- Слайди -->
+                <div class="swiper-slide"><img src="https://bdc2020.o0bc.com/wp-content/uploads/2022/07/ARAM7592-62e01970cbf3f-scaled.jpg" alt="Фото закладу 1"></div>
+                <div class="swiper-slide"><img src="https://gopark.today/upload/resize_cache/iblock/8c1/nonfm1tlhmbn1yus4ala4e5vw8fjrx6d/2100_6000_1/NZ_33.jpg" alt="Фото закладу 2"></div>
+                <div class="swiper-slide"><img src="https://storage.googleapis.com/aba2025_bucket/wp-content/uploads/189bf463-abachicago_interior_jeffmarini_2025-hero.jpg" alt="Фото закладу 3"></div>
+            </div>
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+            <!-- Пагінація -->
+            <div class="swiper-pagination"></div>
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+            <!-- Кнопки навігації -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-    </script>
-<h2 class="location__title"> Як до нас дібратись </h2>
-<iframe width="1000" height="550"
-src="https://www.youtube.com/embed/n_SC0bzCteA"
-title="YouTube video player" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen></iframe>
+            <!-- Прокрутка -->
+            <div class="swiper-scrollbar"></div>
         </div>
-  <footer class="footer">
-    <div class="footer-info">
-        <p>© 2025 Знайдений рай. Усі права захищені.</p>
 
-        <p>
-            <i class="fa-solid fa-phone"></i>
-            +38 066 123 45 67
-        </p>
+        <!-- Підключення скриптів Swiper та модального вікна -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="./js/modal.js"></script>
 
-        <p>
-            <i class="fa-solid fa-location-dot"></i>
-            м. Кропивницький
-        </p>
+        <!-- ================= ЯК ДО НАС ДІБРАТИСЬ ================= -->
+        <h2 class="location__title">Як до нас дібратись</h2>
 
-        <p>
-            <i class="fa-brands fa-instagram"></i>
-            @drink_paradise
-        </p>
-    </div>
-</footer>
+        <!-- Вставка відео з YouTube -->
+        <iframe width="1000" height="550"
+            src="https://www.youtube.com/embed/n_SC0bzCteA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>  
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-info">
+            <!-- Авторське право -->
+            <p>© 2025 Знайдений рай. Усі права захищені.</p>
+
+            <!-- Контактний телефон -->
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +38 066 123 45 67
+            </p>
+
+            <!-- Адреса -->
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                м. Кропивницький
+            </p>
+
+            <!-- Соціальні мережі -->
+            <p>
+                <i class="fa-brands fa-instagram"></i>
+                @drink_paradise
+            </p>
+        </div>
+    </footer>
+
+    <!-- ================= ПІДКЛЮЧЕННЯ СКРИПТІВ ================= -->
+    <!-- Скрипт для функцій шапки -->
+    <script src="./js/header.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Модальні вікна -->
+    <script src="./js/modal.js"></script>
+
+    <!-- Кастомний слайдер -->
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
