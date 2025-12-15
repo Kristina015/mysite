@@ -2,28 +2,38 @@
 <html lang="ukr">
 
 <head>
-    <meta keywords="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Напої</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    
+    <!-- Підключення шрифтів Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Скидання стандартних стилів браузера -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css">
+    
+    <!-- Стилі для Swiper-слайдерів -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    
+    <!-- Основні стилі сайту -->
     <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	<link rel="icon" type="image/svg+xml" href="tropical-drink.svg" />
-	<link rel="icon" href="tropical-drink.png" type="image/png">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- Іконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Фавікон сайту -->
+    <link rel="icon" type="image/svg+xml" href="tropical-drink.svg" />
 </head>
 
 <body>
+    <!-- ================= HEADER ================= -->
     <header>
         <div class="head-container">
+            <!-- Логотип сайту -->
             <div class="logo_drink">
-                <img src="thumbnail.png">
+                <img src="https://cdn-icons-png.flaticon.com/512/5295/5295896.png" alt="Logo">
             </div>
+            <!-- Навігаційне меню -->
             <nav class="our-location">
                 <div class="nav-item"><a href="author.html">Про автора</a></div>
                 <div class="nav-item"><a href="location.html">Адреса</a></div>
@@ -32,288 +42,235 @@
             </nav>
         </div>
     </header>
+
+    <!-- ================= ГОЛОВНИЙ БЛОК ================= -->
     <div class="main">
         <h1 class="hero-title title">Знайдений рай</h1>
     </div>
 
-    <div class="swiper slider">
-        <!-- Additional required wrapper -->
+    <!-- ================= МАЛИЙ СЛАЙДЕР ================= -->
+    <div class="swiper slider-small">
         <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="./img/Capture.JPG"></div>
-          <div class="swiper-slide"><img src="./img/Capture1.JPG"></div>
-          <div class="swiper-slide"><img src="./img/Capture2.jpg"></div>
-         
+            <!-- Кожен слайд зображення -->
+            <div class="swiper-slide"><img src="./img/Capture.JPG" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="./img/Capture1.JPG" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="./img/Capture2.jpg" alt="Slide 3"></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <!-- Кнопки навігації слайдера -->
+        <div class="swiper-button-prev small-prev"></div>
+        <div class="swiper-button-next small-next"></div>
     </div>
 
+    <!-- ================= СПИСОК НАПОЇВ ================= -->
     <div class="drink">
         <div class="drink-title">
             <h2 class="drink-title__seconder">Напої</h2>
         </div>
         <div class="drink-list">
+            <!-- ================= Кожен блок напою ================= -->
             <div class="drink-item">
+                <!-- Зображення напою -->
                 <div class="drink-img">
-                    <img class="drink-foto"
-                        src="./img/bubble-tea.jpg">
+                    <img class="drink-foto" src="./img/bubble-tea.jpg" alt="Бабл Ті">
                 </div>
-                <div class="drink-name">
-                    <span>Бабл Ті</span>
-                </div>
-                <div class="drink-ingridients">
-                    <p>Чай, молоко, вода, тапіока та цукор </p>
-                </div>
+                <!-- Назва напою -->
+                <div class="drink-name"><span>Бабл Ті</span></div>
+                <!-- Інгредієнти -->
+                <div class="drink-ingridients"><p>Чай, молоко, вода, тапіока та цукор</p></div>
+                <!-- Ціна та кнопка покупки -->
                 <div class="drink-action">
                     <div class="price">100 грн</div>
-                    <!-- <a href="#" class="drink-btn">Buy</a> -->
-                    <button type="button" class="button drink-btn" data-modal-open>
-                        Купити
-                    </button>
-                    
+                    <button type="button" class="button drink-btn" data-modal-open>Купити</button>
                 </div>
             </div>
 
             <div class="drink-item">
                 <div class="drink-img">
-                    <img class="drink-foto"
-                        src="https://amandascookin.com/wp-content/uploads/2021/05/blue-lagoon-cocktail-V01-1100x1650.jpg">
+                    <img class="drink-foto" src="https://amandascookin.com/wp-content/uploads/2021/05/blue-lagoon-cocktail-V01-1100x1650.jpg" alt="Блакитна Лагуна">
                 </div>
-                <div class="drink-name">
-                    <span>Блакитна Лагуна</span>
-                </div>
-                <div class="drink-ingridients">
-                    <p>Сироп «Блю Кюрасао», спрайт, вишня, лимонний сік, кубики льоду</p>
-                </div>
+                <div class="drink-name"><span>Блакитна Лагуна</span></div>
+                <div class="drink-ingridients"><p>Сироп «Блю Кюрасао», спрайт, вишня, лимонний сік, кубики льоду</p></div>
                 <div class="drink-action">
                     <div class="price">150 грн</div>
-                    <button type="button" class="button drink-btn" data-modal-open>
-                        Купити
-                    </button>
+                    <button type="button" class="button drink-btn" data-modal-open>Купити</button>
                 </div>
             </div>
 
-         <div class="drink-item">
+            <div class="drink-item">
                 <div class="drink-img">
-                    <img class="drink-foto"
-                        src="./img/margarita.jpg">
+                    <img class="drink-foto" src="./img/margarita.jpg" alt="Маргарита">
                 </div>
-                <div class="drink-name">
-                    <span>Маргарита</span>
-                </div>
-                <div class="drink-ingridients">
-                    <p>Текіла, Куантро та сік лайма</p>
-                </div>
+                <div class="drink-name"><span>Маргарита</span></div>
+                <div class="drink-ingridients"><p>Текіла, Куантро та сік лайма</p></div>
                 <div class="drink-action">
                     <div class="price">200 грн</div>
-                    <button type="button" class="button drink-btn" data-modal-open>
-                        Купити
-                    </button>
+                    <button type="button" class="button drink-btn" data-modal-open>Купити</button>
                 </div>
             </div>
 
             <div class="drink-item">
                 <div class="drink-img">
-                    <img class="drink-foto"
-                        src="https://ourlovelanguageisfood.com/wp-content/uploads/2022/04/mojito-mocktail-scaled.jpg">
+                    <img class="drink-foto" src="https://ourlovelanguageisfood.com/wp-content/uploads/2022/04/mojito-mocktail-scaled.jpg" alt="Мохіто">
                 </div>
-                <div class="drink-name">
-                    <span>Мохіто</span>
-                </div>
-                <div class="drink-ingridients">
-                    <p>Листя м'яти, яблучний сік, сік лайма, бузиновий сироп та газована вода</p>
-                </div>
+                <div class="drink-name"><span>Мохіто</span></div>
+                <div class="drink-ingridients"><p>Листя м'яти, яблучний сік, сік лайма, бузиновий сироп та газована вода</p></div>
                 <div class="drink-action">
                     <div class="price">120 грн</div>
-                    <button type="button" class="button drink-btn" data-modal-open>
-                        Купити
-                    </button>
+                    <button type="button" class="button drink-btn" data-modal-open>Купити</button>
                 </div>
             </div>
-
 
             <div class="drink-item">
                 <div class="drink-img">
-                    <img class="drink-foto"
-                        src="https://www.averiecooks.com/wp-content/uploads/2021/06/cosmo-6.jpg">
+                    <img class="drink-foto" src="https://www.averiecooks.com/wp-content/uploads/2021/06/cosmo-6.jpg" alt="Космополітен">
                 </div>
-                <div class="drink-name">
-                    <span>Космополітен</span>
-                </div>
-                <div class="drink-ingridients">
-                    <p>Горілка, журавлинний сік, лаймовий сік</p>
-                </div>
+                <div class="drink-name"><span>Космополітен</span></div>
+                <div class="drink-ingridients"><p>Горілка, журавлинний сік, лаймовий сік</p></div>
                 <div class="drink-action">
                     <div class="price">250 грн</div>
-                    <button type="button" class="button drink-btn" data-modal-open>
-                        Купити
-                    </button>
+                    <button type="button" class="button drink-btn" data-modal-open>Купити</button>
                 </div>
             </div>
 
-	<div class="drink-item">
+            <div class="drink-item">
                 <div class="drink-img">
-                    <img class="drink-foto"
-                        src="https://www.shakedrinkrepeat.com/wp-content/uploads/2021/05/Pina-Colada-3-683x1024.jpg">
+                    <img class="drink-foto" src="https://www.shakedrinkrepeat.com/wp-content/uploads/2021/05/Pina-Colada-3-683x1024.jpg" alt="Піна Колада">
                 </div>
-                <div class="drink-name">
-                    <span>Піна Колада</span>
-                </div>
-                <div class="drink-ingridients">
-                    <p>Ананасовий сік, ром та кокос</p>
-                </div>
+                <div class="drink-name"><span>Піна Колада</span></div>
+                <div class="drink-ingridients"><p>Ананасовий сік, ром та кокос</p></div>
                 <div class="drink-action">
                     <div class="price">255 грн</div>
-                    <button type="button" class="button drink-btn" data-modal-open>
-                        Купити
-                    </button>
+                    <button type="button" class="button drink-btn" data-modal-open>Купити</button>
                 </div>
             </div>
-
-            
         </div>
     </div>
 
-    <!-- modal -->
-    
-    <div data-modal class="backdrop is-hidden">
-        <div class="modal">
-                <button data-modal-close class="close-btn">
-                <svg class="modal-close icon">
-                    <use class="icon-network" href="./img/icons.svg#icon-close-black">
-                
-                    </use>
-                </svg>
-            </button>
-            <div class="content-card__modal">
-                <div class="content-card__img">
-                    <img src="./img/Drinks_Tropical_cocktails.jpg" width='240' height='357'
-                  alt="Drink" class='content-card__drink'>
-                  <form class="form">
-                   
-                    <label class="form-label">Назва 
-                        <input type="text" class="form-input" name="name" placeholder="Коктейль" required />
-                        
-                    </label>
-                    <label for="quantity" class="form-label">Кількість
-                        <input type="number" class="form-input" name="quantity" min="1" max="30" placeholder=" max= 30 " required />
-                    </label>
-                    <label class="form-label area">
-                        Коментар
-                        <textarea class="form-feedback" name="feedback" rows="5" placeholder="Ваші уподобання"></textarea>              
-                </form>
-                </div>
-                <form class="form">
-                    <h2 class="form-title">ФОРМА ЗАМОВЛЕННЯ</h2>
-                    <label class="form-label">Ім'я
-                        <input type="text" class="form-input" name="name" placeholder="Тарас Шевченко" required />
-                        <span class="form-icon">
-                            <svg class="form-person icon">
-                                <use href="./img/icons.svg#icon-person-black-18dp-1">
-                                </use>
-                            </svg>
-                        </span>
-                    </label>
-                    <label class="form-label">Телефон
-                        <input type="tel" class="form-input" name="phone-number" placeholder="+38 066 1234567" required />
-                        <span class="form-icon">
-                            <svg class="form-person icon">
-                                <use href="./img/icons.svg#icon-phone-black-18dp-1">
-                    
-                                </use>
-                            </svg>
-                        </span>
-                    </label>
-                    <label class="form-label">Адреса доставки
-                        <input type="email" class="form-input" name="email" placeholder="вул. Гоголя, 78а, Кропивницький" required/>
-                        <span class="form-icon">
-                            <svg class="form-person icon">
-                                <use href="./img/icons.svg#icon-email-black-18dp-1">
-                    
-                                </use>
-                            </svg>
-                        </span>
-                    </label>
-                    <!-- <label class="form-label area">
-                        Коментар
-                        <textarea class="form-feedback" name="feedback" rows="5" placeholder="Ваші уподобання"></textarea>
-                    </label>   -->
-                    <label class="checkbox-field">
+    <!-- ================= МОДАЛЬНЕ ВІКНО ЗАМОВЛЕННЯ ================= -->
+    <div data-modal class="backdrop is-hidden"> 
+        <div class="modal"> 
+            <!-- Кнопка закриття модального вікна -->
+            <button data-modal-close class="close-btn"> 
+                <svg class="modal-close icon"> 
+                    <use class="icon-network" href="./img/icons.svg#icon-close-black"></use> 
+                </svg> 
+            </button> 
+            
+            <div class="content-card__modal"> 
+                <!-- Блок зображення та вибору напою -->
+                <div class="content-card__img"> 
+                    <img src="./img/Drinks_Tropical_cocktails.jpg" width='240' height='357' alt="Drink" class='content-card__drink'> 
+                    <!-- Форма вибору напою -->
+                    <form class="form"> 
+                        <label class="form-label">Назва <input type="text" class="form-input" name="name" placeholder="Коктейль" required /> </label> 
+                        <label for="quantity" class="form-label">Кількість <input type="number" class="form-input" name="quantity" min="1" max="30" placeholder=" max= 30 " required /> </label> 
+                        <label class="form-label area"> Коментар <textarea class="form-feedback" name="feedback" rows="5" placeholder="Ваші уподобання"></textarea> 
+                        </label>
+                    </form> 
+                </div> 
+                <!-- Форма замовлення клієнта -->
+                <form class="form"> 
+                    <h2 class="form-title">ФОРМА ЗАМОВЛЕННЯ</h2> 
+                    <label class="form-label">Ім'я <input type="text" class="form-input" name="name" placeholder="Тарас Шевченко" required /> </label> 
+                    <label class="form-label">Телефон <input type="tel" class="form-input" name="phone-number" placeholder="+38 066 1234567" required /> </label> 
+                    <label class="form-label">Адреса доставки <input type="email" class="form-input" name="email" placeholder="вул. Гоголя, 78а, Кропивницький" required/> </label> 
+                    <label class="checkbox-field"> 
                         <input type="checkbox" class="checkbox-consent" name="consent" /> 
-                        <svg class="checkbox-icon icon">
-                            <use href="./img/icons.svg#icon-icon-check">
-                            </use>
-                        </svg>
-                        <span class="checkbox-label">
-                            Погоджуюсь на обробку інформації
-                            <a class="checkbox-link" href="">Умови конфіденційності</a>
-                        </span>
-                        
-                    </label>
-                    <button type="submit" class="button submit">Замовити</button>
-                </form>
-            </div>
-            
-        </div>
-        
-    </div>  
-    <!-- <script src="./js/swiper.js"></script>  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="modal.js"></script>
-    <script type="text/javascript">
-        const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-    </script>
-
-<footer class="footer">
-    <div class="footer-info">
-        <p>© 2025 Знайдений рай. Усі права захищені.</p>
-
-        <p>
-            <i class="fa-solid fa-phone"></i>
-            +38 066 123 45 67
-        </p>
-
-        <p>
-            <i class="fa-solid fa-location-dot"></i>
-            м. Кропивницький
-        </p>
-
-        <p>
-            <i class="fa-brands fa-instagram"></i>
-            @drink_paradise
-        </p>
+                        <span class="checkbox-label"> Погоджуюсь на обробку інформації <a class="checkbox-link" href="">Умови конфіденційності</a> </span> 
+                    </label> 
+                    <button type="submit" class="button submit">Замовити</button> 
+                </form> 
+            </div> 
+        </div> 
     </div>
-</footer>
 
-      
+    <!-- ================= ЧАТ ПІДТРИМКИ ================= -->
+    <div class="chat-button">
+        <i class="fa-solid fa-comment"></i>
+        <span class="chat-label">Потрібна допомога?</span>
+    </div>
+    <div class="chat-window">
+        <!-- Заголовок чату -->
+        <div class="chat-header">
+            <span>Чат підтримки</span>
+            <button class="chat-close">&times;</button>
+        </div>
+        <!-- Блок повідомлень -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Початкове повідомлення бота -->
+            <div class="msg bot">Вітаю! Чим можу допомогти?</div>
+        </div>
+        <!-- Поле вводу повідомлення -->
+        <div class="chat-input">
+            <input type="text" id="chatField" placeholder="Напишіть повідомлення...">
+            <button id="chatSend">Відправити</button>
+        </div>
+    </div>
+
+    <!-- ================= ВІДГУКИ КЛІЄНТІВ ================= -->
+    <div class="drink">
+        <div class="drink-title">
+            <h2 class="drink-title__seconder">Відгуки клієнтів</h2>
+        </div>
+    </div>
+    <section class="reviews">
+        <!-- Кожен блок відгуку -->
+        <div class="review-item">
+            <div class="review-avatar">
+                <img src="https://i.pravatar.cc/60?img=1" alt="Іван">
+            </div>
+            <div class="review-content">
+                <div class="review-header">
+                    <strong>Іван</strong>
+                    <div class="review-rating">★★★★☆</div>
+                </div>
+                <p>Замовив бабл ті — дуже смачно і швидка доставка. Рекомендую всім!</p>
+            </div>
+        </div>
+
+        <div class="review-item">
+            <div class="review-avatar">
+                <img src="https://i.pravatar.cc/60?img=2" alt="Олена">
+            </div>
+            <div class="review-content">
+                <div class="review-header">
+                    <strong>Олена</strong>
+                    <div class="review-rating">★★★★★</div>
+                </div>
+                <p>Коктейлі свіжі та смачні. Усі напої прийшли охолоджені. Дуже задоволена!</p>
+            </div>
+        </div>
+
+        <div class="review-item">
+            <div class="review-avatar">
+                <img src="https://i.pravatar.cc/60?img=3" alt="Олександр">
+            </div>
+            <div class="review-content">
+                <div class="review-header">
+                    <strong>Олександр</strong>
+                    <div class="review-rating">★★★★★</div>
+                </div>
+                <p>Чудовий сервіс та якісні інгредієнти. Замовлятиму ще раз обов’язково!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-info">
+            <p>© 2025 Знайдений рай. Усі права захищені.</p>
+            <p><i class="fa-solid fa-phone"></i> +38 066 123 45 67</p>
+            <p><i class="fa-solid fa-location-dot"></i> м. Кропивницький</p>
+            <p><i class="fa-brands fa-instagram"></i> @drink_paradise</p>
+        </div>
+    </footer>
+
+    <!-- ================= ПІДКЛЮЧЕННЯ JS ================= -->
+    <!-- Скрипт для Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Скрипт для модальних вікон -->
+    <script src="modal.js"></script>
+    <!-- Скрипт для малого слайдера -->
+    <script src="swiper-small.js"></script>
 </body>
-
 </html>
